@@ -1,0 +1,30 @@
+---
+# based on the Jekyll Template for RSS
+# see https://davecoyle.com/tech-notes/jekyll-templates-for-atom-rss/
+
+layout: null
+---
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>{{ site.title }} posts</title>
+        <link>{{ site.url }}</link>
+        <atom:link type="application/rss+xml" rel="self" href="{{ site.url }}/blog/rss.xml" />
+        <description>{{ site.title }}</description>
+        <language>en-us</language>
+        <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
+
+        {% for post in site.posts %}
+        <item>
+            <title>{{ post.title }}</title>
+            <link>{{ site.url }}{{ post.url }}</link>
+            <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+            <author>{{ site.email }}</author>
+            <guid>{{ site.url }}{{ post.id }}</guid>
+            <description>{{ post.content | xml_escape }}</description>
+        </item>
+        {% endfor %}
+
+    </channel>
+</rss>

@@ -1,0 +1,10 @@
+<div class="blog-head">
+    <span class="date">on {{ include.entry.date | date_to_string }}</span>
+    {% if include.entry.author %}
+        <span class="author">by <span class="name">{{ include.entry.author }}</span></span>
+    {% endif %}
+    {% for tag in include.entry.tags %}{% if forloop.first %}<div class="tagged">Tagged {% else %} // {% endif %}<a href="/archives/#tag-{{tag}}">{{tag}}</a>{% if forloop.last %}</div>{% endif %}{% endfor %}
+<!--
+    {% for category in include.entry.categories %}{% if forloop.first %}<div class="categories">Filed under {% else %}, {% endif %}<a href="/archives/#cat-{{category}}">{{category}}</a>{% if forloop.last %}</div>{% endif %}{% endfor %}
+-->
+</div>
