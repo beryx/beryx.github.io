@@ -2,7 +2,7 @@
 layout: post
 title:  "JavaFX controls and skins"
 date:   2016-05-30 23:48:26 +0200
-categories: javafx
+categories: java javafx
 ---
 [JavaFX controls follow the MVC pattern][controls-mvc], which allows multiple views for the same model.
 Therefore, multiple [Skins][javafx-skin] can be provided for a [Control][javafx-control].

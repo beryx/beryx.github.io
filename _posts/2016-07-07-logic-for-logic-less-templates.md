@@ -2,7 +2,7 @@
 layout: post
 title:  "Logic for logic-less templates"
 date:   2016-07-07 20:36:12 +0200
-categories: templates
+categories: java templates Handlebars
 ---
 
 There are many situations where content needs to be created automatically.

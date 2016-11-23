@@ -2,7 +2,7 @@
 layout: post
 title:  "Shuffling very large sequences"
 date:   2016-10-16 23:18:43 +0200
-categories: combinatorics
+categories: java combinatorics Streamplify
 ---
 
 A few days ago I released the first version of the [Streamplify][streamplify] library, which offers a series of useful streams (most of them related to combinatorics) and other utilities for building streams that allow efficient parallel processing.
