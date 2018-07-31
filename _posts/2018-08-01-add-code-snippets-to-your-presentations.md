@@ -7,7 +7,7 @@ categories: asciidoc asciidoctor boothub template deck.js
 
 Most of my technical presentations contain code snippets, but putting nice looking code into my slides was always a tedious task.
 After years of using PowerPoint, I started looking for alternatives.
-There are many good ones, and I was able to found a solution that matches both my personal preferences and my typical use cases.
+There are many good ones, and I was able to find a solution that matches both my personal preferences and my typical use cases.
 
 My source code is usually Java, Groovy, or Kotlin.
 For each presentation, I set up a project containing the code examples I'm going to use in my slides.
